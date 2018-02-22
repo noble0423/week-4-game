@@ -1,5 +1,60 @@
-.crystal-image {
-    width: 150px;
-    height: 150px;
-    border: 1px solid black;
+body {
+    background: url("../images/crystal-black.gif");
+    background-repeat: repeat;
+    background-size: 100%;
+    font-family: 'Orbitron', sans-serif;
+    color: black;
+}
+
+h1 {
+    text-shadow: 4px 2px limegreen;
+}
+
+h2 {
+    color: black;
+    text-shadow: 1px 1px #FC60A8;
+}
+
+.jumbotron {
+    background-color: rgba(245, 245, 245, .45);
+    padding: 10px;
+    
+}
+
+.panel-default {
+    background-color: rgba(245, 245, 245, .45);
+}
+
+#heading {
+    background-color: rgba(245, 245, 245, .45);
+    color: black;
+    text-shadow: 1px 1px #7A28CB;
+}
+
+/* Trying to change panel header background
+.panel-title {
+    background-color: rgba(245, 245, 245, 0.4);
+}*/
+
+.btn-lg {
+    width: 180px;
+}
+
+
+.btn-primary:hover {
+    background: #7A28CB;
+    color: #494368;
+    border: 1px solid #494368;
+    box-shadow: 8px 8px 8px;
+}
+
+.glyphicon-question-sign {
+    color: limegreen;
+    text-shadow: 4px 2px #494368;
+}
+
+.crystal-image:hover {
+    width: 100px;
+    height: 100px;
+    margin: 0 27px;
 }

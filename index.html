@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crystals Collector Game</title>
+    <title>Crystal Collector Game</title>
     <!-- Added a link to Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Added a link to style.css page -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Added a link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <!-- Added a link to jQuery Library -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Added a link to javascript pg, game.js -->
@@ -16,26 +18,69 @@
 </head>
 <body>
 
-    <div class="jumbotron">
-        <h1 class="text-center">The Magic Crystal Game!!</h1>
-        <h2 class="text-center">Click on the crystals below and try to match the Computer Guess</h2>
-    </div>
-        
+    <!-- Main Container -->
     <div class="container">
+        <!-- Row 1 -->
         <div class="row">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Computer Pick</h3>
-                </div>
-                <div class="panel-body text-center">
-                    <h1 id="random-number">???</h1>
-                    <button id="random-button" class="btn btn-primary btn-lg"><h1><span class="glyphicon glyphicon-question-sign"></span></h1></button>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="jumbotron">
+                    <h1 class="text-center" id="title">Crystal Collector!!!</h1>
+                    <h2 class="text-center">Click the crystals to increase your score and match the Computer's Number.</h2>
                 </div>
             </div>
+        </div>
         
+        <!-- Row 2 -->
+        <div class="row">
+            <div class="col-lg-5 col-md-6 col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading">
+                        <h3 class="panel-title">Computer's Number</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <h1 id="random-number">???</h1>
+                        <button id="random-button" class="btn btn-primary btn-lg"><h1><span class="glyphicon glyphicon-question-sign"></span></h1></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-md-6 col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading">
+                        <h3 class="panel-title">Score</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <h1 id="score"></h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading">
+                        <h3 class="panel-title">Wins</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <h1 id="winCounter"></h1>
+                    </div>
+                </div>
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading">
+                        <h3 class="panel-title">Losses</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <h1 id="lossCounter"></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="row">
             <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Pick a crystal</h3>
+                <div class="panel-heading" id="heading">
+                    <h3 class="panel-title">Click a crystal</h3>
                 </div>
                 <div class="panel-body text-center">
                     <!-- Images -->
@@ -45,33 +90,6 @@
                         <img class="crystal-image" id="pink-crystal" src="assets/images/pink.png" alt="pink crystal">
                         <img class="crystal-image" id="yellow-crystal" src="assets/images/yellow.png" alt="yellow crystal">
                     </div>
-                </div>
-            </div>
-        
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Score</h3>
-                </div>
-                <div class="panel-body text-center">
-                    <h1 id="score"></h1>
-                </div>
-            </div>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Wins</h3>
-                </div>
-                <div class="panel-body text-center">
-                    <h1 id="winCounter"></h1>
-                </div>
-            </div>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Losses</h3>
-                </div>
-                <div class="panel-body text-center">
-                    <h1 id="lossCounter"></h1>
                 </div>
             </div>
         </div>
